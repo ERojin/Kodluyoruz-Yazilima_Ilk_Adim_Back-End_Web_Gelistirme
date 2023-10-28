@@ -38,16 +38,12 @@ Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): 1
 Toplam Tutar = 20.0 TL
  --------------------------------------------------------------------------------------------------------*/
 package CalculateTicketPrice;
-
 import java.util.Scanner;
-
 import static CalculateTicketPrice.CalculateTicketPrice.calculateTicketPrice;
-
 public class CalculateTicketPriceApp {
     public static void run()
     {
         Scanner kb = new Scanner(System.in);
-
         for (;;) {
             System.out.print("yolculuk yapacağınız mesafeyi km cinsinden giriniz:");
             double distance = Double.parseDouble(kb.nextLine());
@@ -60,14 +56,11 @@ public class CalculateTicketPriceApp {
                 System.out.println("Hatalı veri girdiniz!");
                 break;
             }
-
             if (trip_type != 1 && trip_type != 2) {
                 System.out.println("Hatalı veri girdiniz, yolculuk tipinizi doğru giriniz!");
                 break;
             }
-
             System.out.printf("Toplam tutar %.02f TL%n", calculateTicketPrice(distance, age, trip_type));
-
             if (distance == 0 || trip_type == 0)
                 break;
         }
