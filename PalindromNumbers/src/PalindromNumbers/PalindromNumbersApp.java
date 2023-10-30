@@ -20,18 +20,15 @@ public class PalindromNumbersApp {
     }
     public static boolean isPalindrom(int number)
     {
-        return number == reverseNumber(number) ? true : false;
+        return number == reverseNumber(number) ;
     }
     public static int reverseNumber(int number)
     {
-        int temp = number;
         int reverseNumber = 0;
-        int lastnumber;
 
-        while (temp != 0) {
-            lastnumber = temp % 10;
-            reverseNumber = (reverseNumber * 10) + lastnumber;
-            temp /= 10;
+        while (number != 0) {
+            reverseNumber = (reverseNumber * 10) + number % 10;
+            number /= 10;
         }
         return reverseNumber;
     }
