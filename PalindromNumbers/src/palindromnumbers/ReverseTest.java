@@ -1,8 +1,8 @@
-package PalindromNumbers;
+package palindromnumbers;
 
 import java.util.Scanner;
 
-import static PalindromNumbers.PalindromNumbersApp.reverseNumber;
+import static palindromnumbers.PalindromNumbersApp.reverseNumber;
 
 public class ReverseTest {
     public static void run() {
