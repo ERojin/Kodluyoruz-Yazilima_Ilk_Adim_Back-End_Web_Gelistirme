@@ -6,9 +6,7 @@ Palindromik sayı, iki taraftan okunduğu zaman okunuş yönüyle aynı olan say
 Örnek: 1, 4, 8, 99, 101, 363, 4004, 9889....
 ---------------------------------------------------------------------------------------------------------------------*/
 package PalindromNumbers;
-
 import java.util.Scanner;
-
 public class PalindromNumbersApp {
     public static void run() {
         Scanner kb = new Scanner(System.in);
@@ -19,7 +17,6 @@ public class PalindromNumbersApp {
             System.out.print("Girdiğiniz sayı palindromdur.");
         else
             System.out.print("Girdiğiniz sayı palindrom değildir.");
-
     }
     public static boolean isPalindrom(int number)
     {
