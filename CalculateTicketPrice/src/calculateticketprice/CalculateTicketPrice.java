@@ -37,32 +37,25 @@ Yaşınızı giriniz : 35
 Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ): 1
 Toplam Tutar = 20.0 TL
  --------------------------------------------------------------------------------------------------------*/
-package CalculateTicketPrice;
-import java.util.Scanner;
-import static CalculateTicketPrice.CalculateTicketPrice.calculateTicketPrice;
-public class CalculateTicketPriceApp {
-    public static void run()
-    {
-        Scanner kb = new Scanner(System.in);
-        for (;;) {
-            System.out.print("yolculuk yapacağınız mesafeyi km cinsinden giriniz:");
-            double distance = Double.parseDouble(kb.nextLine());
-            System.out.print("Yaşınızı giriniz:");
-            int age = Integer.parseInt(kb.nextLine());
-            System.out.print("Yolculuk tipiniz Tek yön ise 1, Gidiş-Dönüş ise 2 giriniz:");
-            int trip_type = Integer.parseInt(kb.nextLine());
+package calculateticketprice;
 
-            if (age < 0 || distance < 0) {
-                System.out.println("Hatalı veri girdiniz!");
-                break;
-            }
-            if (trip_type != 1 && trip_type != 2) {
-                System.out.println("Hatalı veri girdiniz, yolculuk tipinizi doğru giriniz!");
-                break;
-            }
-            System.out.printf("Toplam tutar %.02f TL%n", calculateTicketPrice(distance, age, trip_type));
-            if (distance == 0 || trip_type == 0)
-                break;
-        }
+public class CalculateTicketPrice {
+    public static double calculateTicketPrice(double distance, int age, int trip_type)
+    {
+        double price = 0.10 * distance;
+
+        if (age < 12)
+            price *= 0.5;
+
+        if (12 < age && age < 25)
+            price *= 0.9;
+
+        if (65 < age)
+            price *= 0.7;
+
+        if (trip_type == 2)
+            price *= 0.8 * 2;
+
+        return price;
     }
 }
