@@ -1,4 +1,4 @@
-package ExamsAverage;
+package examsaverage;
 
 public class ExamsAverage {
     public static String result(int sum)

@@ -7,7 +7,7 @@ Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının
 ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
 Not : If ve Else kullanılmayacak...
  --------------------------------------------------------------------------------------------------------*/
-package ExamsAverage;
+package examsaverage;
 
 import java.util.Scanner;
 
