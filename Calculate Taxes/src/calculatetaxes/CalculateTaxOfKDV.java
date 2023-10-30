@@ -9,7 +9,7 @@ Alıştırma
 Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %20 , tutar 1000 TL'den büyük ise KDV oranını %8
 olarak KDV tutarı hesaplayan programı yazınız.
  --------------------------------------------------------------------------------------------------------*/
-package CalculateTaxes;
+package calculatetaxes;
 
 import java.util.Scanner;
 
