@@ -11,7 +11,7 @@ Kaç tane sayı gireceksiniz: 4
 En büyük sayı: 100
 En küçük sayı: -22
 ----------------------------------------------------------------------------------------------------------------------*/
-package Homework3;
+package homework3;
 import java.util.Scanner;
 
 public class MaxMinApp {
