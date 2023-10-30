@@ -7,7 +7,7 @@ isterse yeni girdiği şifrenin hatalı girdiği ve unuttuğu şifre ile aynı o
 şifreler aynı ise ekrana "Şifre oluşturulamadı, lütfen başka şifre giriniz."
 sorun yoksa "Şifre oluşturuldu" yazan programı yazınız.
  --------------------------------------------------------------------------------------------------------*/
-package UserInformation;
+package userinformation;
 
 import java.util.Scanner;
 
